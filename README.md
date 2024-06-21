@@ -38,7 +38,8 @@ O projeto utiliza variáveis CSS para cores principais. Você pode ajustar essas
     --cor2: #F2B01F; 
     --cor3: #404241; 
     --cor4: #D28D03; 
-}
+} 
+```
 
 ## Contribuição
 Sinta-se à vontade para contribuir com melhorias para este projeto. Para contribuir, siga estes passos:
