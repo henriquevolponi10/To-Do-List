@@ -1,4 +1,11 @@
-/* styles.css */
+:root {
+    --cor0: #f9f9fa;
+    --cor1: #AED1D1;
+    --cor2: #F2B01F;
+    --cor3: #404241;
+    --cor4: #D28D03;
+  }
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -10,7 +17,7 @@ body {
 }
 
 .todo-container {
-    background-color: white;
+    background-color: var(--cor3);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -19,7 +26,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: var(--cor2);
 }
 
 .todo-input {
@@ -38,7 +45,7 @@ h1 {
 #add-task-btn {
     padding: 10px 15px;
     margin-left: 10px;
-    background-color: #28a745;
+    background-color: var(--cor2);
     color: white;
     border: none;
     border-radius: 4px;
@@ -46,12 +53,13 @@ h1 {
 }
 
 #add-task-btn:hover {
-    background-color: #218838;
+    background-color: var(--cor4)
 }
 
 #task-list {
     list-style: none;
     padding: 0;
+    color: var(--cor0)
 }
 
 .task-item {
@@ -68,7 +76,7 @@ h1 {
 }
 
 .task-item button {
-    background-color: #dc3545;
+    background-color: var(--cor2);
     color: white;
     border: none;
     border-radius: 4px;
@@ -77,5 +85,5 @@ h1 {
 }
 
 .task-item button:hover {
-    background-color: #c82333;
+    background-color: var(--cor4);
 }
