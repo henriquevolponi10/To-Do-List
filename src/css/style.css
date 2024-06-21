@@ -4,33 +4,42 @@
     --cor2: #F2B01F;
     --cor3: #404241;
     --cor4: #D28D03;
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    background-image: url('/src/img/foto.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex-direction: column;
 }
 
 .todo-container {
     background-color: var(--cor3);
-    padding: 20px;
+    padding: 30px; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 90%; 
+    max-width: 400px; 
+    margin: 20px; 
 }
 
 h1 {
     text-align: center;
     color: var(--cor2);
+    font-size: 24px; 
 }
 
 .todo-input {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -53,13 +62,13 @@ h1 {
 }
 
 #add-task-btn:hover {
-    background-color: var(--cor4)
+    background-color: var(--cor4);
 }
 
 #task-list {
     list-style: none;
     padding: 0;
-    color: var(--cor0)
+    color: var(--cor0);
 }
 
 .task-item {
@@ -86,4 +95,34 @@ h1 {
 
 .task-item button:hover {
     background-color: var(--cor4);
+}
+
+.link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link a {
+    font-size: 18px; 
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+.link a:hover {
+    font-size: 20px; 
+}
+
+@media (max-width: 600px) {
+    .todo-container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    .link a {
+        font-size: 16px;
+    }
 }
